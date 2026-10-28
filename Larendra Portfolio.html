@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Larendra | AI Developer, Web Developer, Discord Bot Creator</title>
+<meta name="description" content="Larendra builds AI applications, websites, Discord bots, and automation tools. Browse projects and get in touch.">
+<meta name="theme-color" content="#05060f">
+<meta property="og:title" content="Larendra | AI Developer and Discord Bot Creator">
+<meta property="og:description" content="AI applications, websites, Discord bots, and automation by Larendra.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Larendra","jobTitle":"AI Developer, Web Developer, Discord Bot Creator","description":"Independent developer building AI applications, websites, Discord bots, and automation."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05060f;--navy:#0b1030;--purple:#8b5cf6;--violet:#c084fc;--blue:#3b82f6;--text:#e8eaf6;--muted:#9aa0c3;--glass:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#2a1565 0%,transparent 60%),radial-gradient(900px 600px at 0% 30%,#0e1a52 0%,transparent 60%),var(--bg);color:var(--text);font:400 1.05rem/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit;text-decoration:none}
+#fx{position:fixed;inset:0;z-index:0;pointer-events:none}
+main,header,footer{position:relative;z-index:1}
+section{max-width:1080px;margin:0 auto;padding:96px 24px}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:36px}
+.glass{background:var(--glass);border:1px solid var(--line);border-radius:20px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:rgba(5,6,15,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .logo{font:800 1.2rem Sora,sans-serif}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{color:var(--muted);font-size:.95rem;transition:color .2s}
+nav a:hover,nav a:focus-visible{color:#fff}
+:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:120px}
+.hero h1{font-size:clamp(3.4rem,11vw,7.5rem);font-weight:800;letter-spacing:-.03em;background:linear-gradient(100deg,#fff 10%,var(--violet) 55%,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font:600 clamp(1.1rem,2.6vw,1.6rem) Sora,sans-serif;margin:18px 0 6px;min-height:1.6em}
+.role .cur{display:inline-block;width:2px;height:1.1em;background:var(--violet);vertical-align:-.15em;margin-left:3px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.tag{color:var(--violet);margin:0 0 18px}
+.lead{max-width:56ch;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{padding:14px 26px;border-radius:999px;font-weight:500;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+.btn.main{background:linear-gradient(100deg,var(--purple),var(--blue));border-color:transparent;box-shadow:0 8px 30px rgba(139,92,246,.35)}
+.btn:hover{transform:translateY(-2px)}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:start}
+.about p{margin:0 0 14px;color:var(--muted)}
+.focus{padding:26px;list-style:none;margin:0}
+.focus li{padding:11px 0;border-bottom:1px solid var(--line)}
+.focus li:last-child{border:0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.skills .glass{padding:26px}
+.skills h3{font-size:1.1rem;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{padding:7px 14px;border-radius:999px;background:rgba(139,92,246,.14);border:1px solid rgba(139,92,246,.35);font-size:.92rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);border-color:rgba(192,132,252,.6);box-shadow:0 18px 50px rgba(139,92,246,.25)}
+.art{height:150px;display:grid;place-items:center;font:800 3.4rem Sora,sans-serif;color:rgba(255,255,255,.9)}
+.card .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:1.2rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem;flex:1}
+.card .btn{align-self:flex-start;padding:10px 20px;font-size:.92rem}
+.timeline{border-left:2px solid var(--purple);padding-left:26px;display:grid;gap:26px;max-width:700px}
+.timeline h3{font-size:1.1rem;margin-bottom:4px}
+.timeline small{color:var(--violet)}
+.timeline p{margin:6px 0 0;color:var(--muted)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.contact a{padding:26px;transition:transform .2s,border-color .2s}
+.contact a:hover{transform:translateY(-4px);border-color:var(--violet)}
+.contact b{display:block;font:600 1.1rem Sora,sans-serif;margin-bottom:4px}
+.contact span{color:var(--muted);font-size:.95rem}
+footer{text-align:center;padding:40px 24px calc(40px + env(safe-area-inset-bottom,0px));color:var(--muted);border-top:1px solid var(--line);font-size:.92rem}
+#loader{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--bg);transition:opacity .6s,visibility .6s}
+#loader.done{opacity:0;visibility:hidden}
+#loader div{font:800 2.4rem Sora,sans-serif;letter-spacing:.02em;background:linear-gradient(100deg,#fff,var(--violet),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.4;transform:scale(.97)}}
+#dot,#ring{position:fixed;top:0;left:0;z-index:200;pointer-events:none;border-radius:50%;display:none}
+#dot{width:8px;height:8px;background:var(--violet);margin:-4px 0 0 -4px}
+#ring{width:36px;height:36px;border:1px solid rgba(192,132,252,.7);margin:-18px 0 0 -18px;transition:width .2s,height .2s,margin .2s,background .2s}
+#ring.big{width:60px;height:60px;margin:-30px 0 0 -30px;background:rgba(139,92,246,.15)}
+@media (hover:hover) and (pointer:fine){#dot,#ring{display:block}body,a{cursor:none}}
+@media (max-width:720px){nav ul{gap:14px}nav li:nth-child(n+4){display:none}.about{grid-template-columns:1fr}section{padding:72px 20px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="loader" aria-hidden="true"><div>Larendra</div></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="dot"></div><div id="ring"></div>
+
+<nav aria-label="Main">
+  <a class="logo" href="#top">Larendra</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Larendra</h1>
+    <div class="role" aria-live="off"><span id="type"></span><span class="cur"></span></div>
+    <p class="tag">Building AI, Automation, and Digital Experiences.</p>
+    <p class="lead">I create intelligent websites, Discord bots, AI-powered applications, and automation solutions that combine technology with creativity.</p>
+    <div class="btns">
+      <a class="btn main" href="#projects">View Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about">
+      <div>
+        <p>I'm an independent developer who likes building tools people use every day: chat assistants that answer questions, bots that run Discord servers, and websites that load fast.</p>
+        <p>I also model and render in Blender, which shapes how I design interfaces. I pick up whatever a project needs, then ship it.</p>
+      </div>
+      <ul class="focus glass">
+        <li>Artificial Intelligence</li>
+        <li>Web Development</li>
+        <li>Discord Bot Development</li>
+        <li>Automation Systems</li>
+        <li>Blender 3D</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="glass"><h3>Frontend</h3><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span></div></div>
+      <div class="glass"><h3>Backend</h3><div class="chips"><span>Python</span><span>Flask</span><span>Node.js</span></div></div>
+      <div class="glass"><h3>Tools</h3><div class="chips"><span>GitHub</span><span>Vercel</span><span>Blender</span><span>Gemini API</span><span>Discord API</span></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="glass card"><div class="art" style="background:linear-gradient(135deg,#6d28d9,#2563eb)">AI</div><div class="body"><h3>AI Chat Assistant</h3><p>A chat app powered by the Gemini API that answers questions and keeps context across a conversation.</p><a class="btn" href="#">Live demo</a></div></article>
+      <article class="glass card"><div class="art" style="background:linear-gradient(135deg,#7c3aed,#db2777)">BD</div><div class="body"><h3>Discord Birthday Bot</h3><p>Tracks member birthdays, posts greetings in a chosen channel, and assigns a birthday role for the day.</p><a class="btn" href="#">Live demo</a></div></article>
+      <article class="glass card"><div class="art" style="background:linear-gradient(135deg,#1e3a8a,#7c3aed)">WW</div><div class="body"><h3>Business Company Website</h3><p>A responsive company site with service pages and a contact form, deployed on Vercel.</p><a class="btn" href="#">Live demo</a></div></article>
+      <article class="glass card"><div class="art" style="background:linear-gradient(135deg,#4c1d95,#0ea5e9)">VC</div><div class="body"><h3>AI Virtual Companion</h3><p>A character you can talk to, with a personality prompt and short-term memory built on an LLM API.</p><a class="btn" href="#">Live demo</a></div></article>
+      <article class="glass card"><div class="art" style="background:linear-gradient(135deg,#312e81,#a855f7)">3D</div><div class="body"><h3>Blender 3D Showcase</h3><p>A gallery of modeled and rendered scenes, from product shots to stylized environments.</p><a class="btn" href="#">Live demo</a></div></article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div><h3>Independent Developer</h3><small>Ongoing</small><p>I build AI applications, websites, Discord bots, and creative projects on my own, from first prototype to deployment.</p></div>
+      <div><h3>Discord Bots and Automation</h3><p>I write bots with the Discord API that handle reminders, roles, and community tasks, plus scripts that automate repetitive work.</p></div>
+      <div><h3>AI and Web Applications</h3><p>I connect LLM APIs like Gemini to Flask and Node.js backends and ship them with clean, responsive frontends.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <a class="glass" href="#"><b>Discord</b><span>Add your Discord username</span></a>
+      <a class="glass" href="https://github.com/" rel="noopener"><b>GitHub</b><span>Add your GitHub profile link</span></a>
+      <a class="glass" href="mailto:hello@example.com"><b>Email</b><span>Add your email address</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Larendra. All rights reserved.</footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  window.addEventListener('load',function(){setTimeout(function(){document.getElementById('loader').classList.add('done')},reduce?0:900)});
+
+  var words=['AI Developer','Web Developer','Discord Bot Creator'],t=document.getElementById('type'),w=0,c=0,del=false;
+  function tick(){
+    var s=words[w];
+    if(reduce){t.textContent=words.join(', ');return}
+    t.textContent=s.slice(0,c);
+    if(!del&&c===s.length){del=true;return setTimeout(tick,1400)}
+    if(del&&c===0){del=false;w=(w+1)%words.length}
+    c+=del?-1:1;setTimeout(tick,del?40:80);
+  }
+  tick();
+
+  var cv=document.getElementById('fx'),x=cv.getContext('2d'),P=[],W,H,m={x:-999,y:-999};
+  function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;P=[];var n=Math.min(90,Math.floor(W*H/16000));for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.6+.6})}
+  size();addEventListener('resize',size);
+  function draw(){
+    x.clearRect(0,0,W,H);
+    for(var i=0;i<P.length;i++){
+      var p=P[i];p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+      x.fillStyle='rgba(192,132,252,.7)';x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fill();
+      for(var j=i+1;j<P.length;j++){
+        var q=P[j],dx=p.x-q.x,dy=p.y-q.y,d=dx*dx+dy*dy;
+        if(d<12000){x.strokeStyle='rgba(139,92,246,'+(.18*(1-d/12000))+')';x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}
+      }
+      var mx=p.x-m.x,my=p.y-m.y,md=mx*mx+my*my;
+      if(md<14000){p.x+=mx*.002;p.y+=my*.002}
+    }
+    if(!reduce)requestAnimationFrame(draw);
+  }
+  draw();
+  addEventListener('mousemove',function(e){m.x=e.clientX;m.y=e.clientY});
+
+  var dot=document.getElementById('dot'),ring=document.getElementById('ring'),rx=0,ry=0,dx=0,dy=0;
+  addEventListener('mousemove',function(e){dx=e.clientX;dy=e.clientY;dot.style.transform='translate('+dx+'px,'+dy+'px)'});
+  (function follow(){rx+=(dx-rx)*.16;ry+=(dy-ry)*.16;ring.style.transform='translate('+rx+'px,'+ry+'px)';requestAnimationFrame(follow)})();
+  document.querySelectorAll('a,.btn').forEach(function(el){
+    el.addEventListener('mouseenter',function(){ring.classList.add('big')});
+    el.addEventListener('mouseleave',function(){ring.classList.remove('big')});
+  });
+})();
+</script>
+</body>
+</html>
